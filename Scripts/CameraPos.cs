@@ -57,7 +57,7 @@ public class CameraPos : MonoBehaviour
 
             if (distPrev == 0 && lerpDist < 1)
             {
-                lerpDist += lerpRate;
+                lerpDist += lerpRate; 
                 transform.position = Vector3.Lerp(prevPos, targetPos, lerpDist);
             }
             else if (!(distPrev == 0))
